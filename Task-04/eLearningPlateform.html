@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - eLearning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">LearnHub</div>
+            <ul class="nav-menu">
+                <li class="nav-item active" data-page="dashboard">Dashboard</li>
+                <li class="nav-item" data-page="courses">Courses</li>
+                <li class="nav-item" data-page="progress">Progress</li>
+                <li class="nav-item" data-page="profile">Profile</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Dashboard Page -->
+        <div class="page active" id="dashboard">
+            <div class="dashboard-header">
+                <h1>Welcome back, Amresh!</h1>
+                <p>Continue your learning journey with our latest courses</p>
+            </div>
+
+            <!-- Statistics Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">5</span>
+                    <p>Enrolled Courses</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">23</span>
+                    <p>Completed Lessons</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">45h</span>
+                    <p>Learning Hours</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">3</span>
+                    <p>Certificates Earned</p>
+                </div>
+            </div>
+
+            <!-- Continue Learning Section -->
+            <h2 class="section-title">Continue Learning</h2>
+            <div class="courses-grid">
+                <div class="course-card" data-course="js-advanced">
+                    <div class="course-image">JavaScript Advanced</div>
+                    <div class="course-content">
+                        <div class="course-title">Advanced JavaScript Concepts</div>
+                        <div class="course-instructor">Instructor: John Smith</div>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <div class="progress-text">65% Complete - 8 of 12 lessons</div>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">★★★★★</div>
+                            <span>4.8 (324 reviews)</span>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Continue Learning</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course="react-basics">
+                    <div class="course-image">React.js Fundamentals</div>
+                    <div class="course-content">
+                        <div class="course-title">React.js for Beginners</div>
+                        <div class="course-instructor">Instructor: Sarah Johnson</div>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                            <div class="progress-text">30% Complete - 3 of 10 lessons</div>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span>4.6 (256 reviews)</span>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Continue Learning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Courses Page -->
+        <div class="page" id="courses">
+            <h1 class="section-title">All Courses</h1>
+            <div class="courses-grid">
+                <div class="course-card" data-course="js-advanced">
+                    <div class="course-image">JavaScript Advanced</div>
+                    <div class="course-content">
+                        <div class="course-title">Advanced JavaScript Concepts</div>
+                        <div class="course-instructor">Instructor: John Smith</div>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <div class="progress-text">65% Complete</div>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">★★★★★</div>
+                            <span>4.8 (324 reviews)</span>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 1rem; width: 100%;">View Course</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course="react-basics">
+                    <div class="course-image">React.js Fundamentals</div>
+                    <div class="course-content">
+                        <div class="course-title">React.js for Beginners</div>
+                        <div class="course-instructor">Instructor: Sarah Johnson</div>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                            <div class="progress-text">30% Complete</div>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span>4.6 (256 reviews)</span>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 1rem; width: 100%;">View Course</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course="html-css">
+                    <div class="course-image">HTML & CSS Mastery</div>
+                    <div class="course-content">
+                        <div class="course-title">Complete HTML & CSS Course</div>
+                        <div class="course-instructor">Instructor: Mike Chen</div>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                            <div class="progress-text">100% Complete</div>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">★★★★★</div>
+                            <span>4.9 (189 reviews)</span>
+                        </div>
+                        <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;">Completed</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course="python-basics">
+                    <div class="course-image">Python Programming</div>
+                    <div class="course-content">
+                        <div class="course-title">Python for Beginners</div>
+                        <div class="course-instructor">Instructor: Lisa Wang</div>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <div class="progress-text">Not Started</div>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span>4.7 (412 reviews)</span>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Start Course</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Page -->
+        <div class="page" id="progress">
+            <h1 class="section-title">Learning Progress</h1>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">75%</span>
+                    <p>Overall Progress</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">45</span>
+                    <p>Total Hours</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">23</span>
+                    <p>Lessons Completed</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">3</span>
+                    <p>Certificates</p>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <h3 style="margin-bottom: 1.5rem;">Course Progress Details</h3>
+                
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>Advanced JavaScript Concepts</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%"></div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>React.js for Beginners</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%"></div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>Complete HTML & CSS Course</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>Python for Beginners</span>
+                        <span>0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Page -->
+        <div class="page" id="profile">
+            <div class="profile-container">
+                <div class="profile-sidebar">
+                    <div class="profile-avatar">AV</div>
+                    <div class="profile-info">
+                        <div class="profile-name">Amresh Kumar Verma</div>
+                        <div class="profile-title">Web Developer</div>
+                        <p style="color: #666; margin-bottom: 1rem;">Passionate about learning new technologies and building amazing web applications.</p>
+                        <button class="btn btn-primary">Edit Profile</button>
+                    </div>
+                </div>
+
+                <div class="profile-main">
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="achievement-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🏆</div>
+                            <h4>Course Completer</h4>
+                            <p>Completed 1 course</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">⭐</div>
+                            <h4>Quick Learner</h4>
+                            <p>45 hours of learning</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">📚</div>
+                            <h4>Knowledge Seeker</h4>
+                            <p>Enrolled in 5 courses</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🎯</div>
+                            <h4>Dedicated Student</h4>
+                            <p>23 lessons completed</p>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-bottom: 1rem;">Recent Activity</h3>
+                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 5px; margin-bottom: 1rem;">
+                        <strong>Yesterday:</strong> Completed "Async/Await in JavaScript" lesson
+                    </div>
+                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 5px; margin-bottom: 1rem;">
+                        <strong>2 days ago:</strong> Started "React.js for Beginners" course
+                    </div>
+                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 5px;">
+                        <strong>1 week ago:</strong> Earned "HTML & CSS Master" certificate
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Detail Page (Hidden by default) -->
+        <div class="page" id="course-detail">
+            <button class="btn btn-secondary" id="back-btn" style="margin-bottom: 1rem;">← Back to Courses</button>
+            
+            <div class="course-header">
+                <h1 class="course-detail-title">Advanced JavaScript Concepts</h1>
+                <div class="course-meta">
+                    <div class="meta-item">
+                        <span>👨‍🏫</span>
+                        <span>John Smith</span>
+                    </div>
+                    <div class="meta-item">
+                        <span>⏱️</span>
+                        <span>12 lessons</span>
+                    </div>
+                    <div class="meta-item">
+                        <span>📅</span>
+                        <span>Updated September 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <span>⭐</span>
+                        <span>4.8 (324 reviews)</span>
+                    </div>
+                </div>
+                <div class="course-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%"></div>
+                    </div>
+                    <div class="progress-text">65% Complete - 8 of 12 lessons</div>
+                </div>
+            </div>
+
+            <!-- Video Player Section -->
+            <div class="video-container">
+                <h3 style="margin-bottom: 1rem;">Current Lesson: Promises and Async Programming</h3>
+                <div class="video-player" id="video-player">
+                    <div class="video-placeholder">
+                        <div>
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">▶️</div>
+                            <p>Click to play video lesson</p>
+                            <p style="font-size: 0.9rem; opacity: 0.8;">Duration: 15:30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-controls">
+                    <button class="btn btn-secondary">Previous Lesson</button>
+                    <button class="btn btn-primary">Mark as Complete</button>
+                    <button class="btn btn-secondary">Next Lesson</button>
+                </div>
+            </div>
+
+            <!-- Lesson List -->
+            <div class="lesson-list">
+                <h3 style="margin-bottom: 1.5rem;">Course Lessons</h3>
+                
+                <div class="lesson-item">
+                    <div class="lesson-info">
+                        <div class="lesson-status completed">✓</div>
+                        <div>
+                            <div>Introduction to Advanced JavaScript</div>
+                            <div style="font-size: 0.9rem; color: #666;">10:25</div>
+                        </div>
+                    </div>
+                    <div>Completed</div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-info">
+                        <div class="lesson-status completed">✓</div>
+                        <div>
+                            <div>Understanding Closures</div>
+                            <div style="font-size: 0.9rem; color: #666;">12:15</div>
+                        </div>
+                    </div>
+                    <div>Completed</div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-info">
+                        <div class="lesson-status current">▶</div>
+                        <div>
+                            <div><strong>Promises and Async Programming</strong></div>
+                            <div style="font-size: 0.9rem; color: #666;">15:30</div>
+                        </div>
+                    </div>
+                    <div style="color: #667eea; font-weight: bold;">Current</div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-info">
+                        <div class="lesson-status">9</div>
+                        <div>
+                            <div>Async/Await Syntax</div>
+                            <div style="font-size: 0.9rem; color: #666;">18:45</div>
+                        </div>
+                    </div>
+                    <div>Not Started</div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-info">
+                        <div class="lesson-status">10</div>
+                        <div>
+                            <div>Error Handling in Async Code</div>
+                            <div style="font-size: 0.9rem; color: #666;">14:20</div>
+                        </div>
+                    </div>
+                    <div>Not Started</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
